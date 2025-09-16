@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sales Predictor</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(120deg, #f0f4ff, #dbeafe);
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .form-container {
+      background-color: white;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 450px;
+    }
+    h1 {
+      text-align: center;
+      color: #1e3a8a;
+      margin-bottom: 30px;
+    }
+    label {
+      font-weight: 500;
+      color: #334155;
+      margin-top: 10px;
+    }
+    input.form-control {
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border-radius: 6px;
+      border: 1px solid #cbd5e1;
+    }
+    button {
+      width: 100%;
+      background-color: #3b82f6;
+      color: white;
+      font-weight: bold;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background-color: #2563eb;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h1>Sales Predictor</h1>
+    <form method="POST">
+      <label for="tv">Enter TV Budget ($):</label>
+      <input type="number" name="tv" id="tv" step="any" class="form-control" required>
+
+      <label for="radio">Enter Radio Budget ($):</label>
+      <input type="number" name="radio" id="radio" step="any" class="form-control" required>
+
+      <label for="newspaper">Enter Newspaper Budget ($):</label>
+      <input type="number" name="newspaper" id="newspaper" step="any" class="form-control" required>
+
+      <button type="submit">Predict Sales</button>
+    </form>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
